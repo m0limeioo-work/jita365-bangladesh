@@ -149,11 +149,16 @@
         .app-visual {
             position: relative;
             text-align: center;
+            max-width: 320px;
+            margin: 0 auto;
         }
         .app-visual img {
             width: 100%;
-            max-width: 420px;
+            max-width: 320px;
+            max-height: min(420px, 55vh);
             height: auto;
+            object-fit: contain;
+            object-position: center top;
             display: block;
             margin: 0 auto;
             filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
@@ -165,7 +170,7 @@
             top: 45%;
             transform: translate(-50%, -50%);
             width: 70%;
-            height: 70%;
+            height: 55%;
             background: radial-gradient(ellipse, rgba(0, 255, 157, 0.16), transparent 68%);
             filter: blur(28px);
             z-index: -1;

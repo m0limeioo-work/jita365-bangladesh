@@ -150,7 +150,8 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 14px;
-            height: 100%;
+            /* Do not force height:100% globally — overflows when stacked with siblings in a column */
+            height: auto;
             transition: border-color 0.2s ease, transform 0.2s ease;
         }
         .card-dark:hover {
@@ -270,11 +271,16 @@
         .app-visual {
             position: relative;
             text-align: center;
+            max-width: 320px;
+            margin: 0 auto;
         }
         .app-visual img {
             width: 100%;
-            max-width: 380px;
+            max-width: 320px;
+            max-height: min(420px, 55vh);
             height: auto;
+            object-fit: contain;
+            object-position: center top;
             display: block;
             margin: 0 auto;
             filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
@@ -925,9 +931,9 @@
             <p class="section-sub text-center">
                 “jita365 vip login” searches are common — there is still only one entrance.
             </p>
-            <div class="row g-4">
+            <div class="row g-4 align-items-start">
                 <div class="col-lg-7">
-                    <div class="guide-block mb-0 h-100">
+                    <div class="guide-block mb-0">
                         <div class="guide-head">
                             <span class="guide-tag">Login</span>
                             <h3 class="section-title fs-4 mb-0">Same door for VIP &amp; regular</h3>
@@ -947,13 +953,15 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="warning-note mb-3">
-                        <strong>Avoid:</strong> sites that claim a special VIP-only login URL on a different domain. Benefits change with your level on the <strong>same</strong> account.
-                    </div>
-                    <div class="card-dark p-4">
-                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3 class="fs-5">Bookmark the real site</h3>
-                        <p class="meta mb-0">Prefer links from this page ending in the official affiliate path with <code>pid=jita365aff</code> — not random “jita365” lookalikes.</p>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="warning-note mb-0">
+                            <strong>Avoid:</strong> sites that claim a special VIP-only login URL on a different domain. Benefits change with your level on the <strong>same</strong> account.
+                        </div>
+                        <div class="card-dark p-4">
+                            <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3 class="fs-5">Bookmark the real site</h3>
+                            <p class="meta mb-0">Prefer links from this page ending in the official affiliate path with <code>pid=jita365aff</code> — not random “jita365” lookalikes.</p>
+                        </div>
                     </div>
                 </div>
             </div>
