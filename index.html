@@ -3,138 +3,1113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jita365 Bangladesh - Best bKash & Nagad Online Casino with 300% Welcome Bonus, 7% Daily Deposit Bonus & Fast Withdrawal. Join Now!">
-    <title>Jita365 | Bangladesh's Best bKash & Nagad Casino & Slots</title>
+    <meta name="description" content="Jita365 Bangladesh — low minimum deposit ৳100, 15-min withdrawal, 50 free spins, 200%/300% welcome bonus, 7% daily deposit bonus. bKash & Nagad. Curacao licensed.">
+    <meta name="keywords" content="jita365, jita365 login, jita365 bangladesh, jita365 bonus, bkash casino, nagad betting">
+    <title>Jita365 | Top bKash & Nagad Betting Platform in Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         :root {
-            --primary: #0d6efd;
-            --accent: #ffc107;
+            --dark: #0a1f1c;
+            --darker: #061412;
+            --card: #112c28;
+            --green: #00ff9d;
+            --accent: #00cc7a;
+            --muted: #8aaba3;
+            --border: rgba(0, 204, 122, 0.2);
         }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; }
-        .hero { 
-            background: linear-gradient(rgba(13, 110, 253, 0.85), rgba(13, 110, 253, 0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
-            color: white;
-            padding: 180px 0 100px;
+        body {
+            background-color: var(--dark);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
         }
-        .cta-btn {
-            background: #ffc107;
+        a { color: var(--green); text-decoration: none; }
+        a:hover { color: #66ffc2; }
+
+        .navbar {
+            background-color: rgba(10, 31, 28, 0.95) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+        .navbar-brand {
+            color: var(--green) !important;
+            letter-spacing: 0.5px;
+        }
+        .nav-link {
+            color: #c8ddd8 !important;
+            font-weight: 500;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--green) !important;
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, #00ff9d, #00cc7a);
             color: #000;
-            font-weight: bold;
+            font-weight: 700;
             padding: 14px 32px;
-            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
         }
-        .trust-badge { font-size: 0.9rem; }
+        .btn-cta:hover {
+            color: #000;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 24px rgba(0, 255, 157, 0.25);
+        }
+        .btn-outline-green {
+            border: 1.5px solid var(--accent);
+            color: var(--green);
+            font-weight: 600;
+            padding: 14px 32px;
+            border-radius: 8px;
+            background: transparent;
+        }
+        .btn-outline-green:hover {
+            background: rgba(0, 255, 157, 0.1);
+            color: var(--green);
+        }
+
+        .hero {
+            background:
+                radial-gradient(ellipse at 75% 40%, rgba(0, 120, 255, 0.12), transparent 45%),
+                radial-gradient(ellipse at 20% 30%, rgba(0, 255, 157, 0.1), transparent 40%),
+                linear-gradient(160deg, #061412 0%, #0a1f1c 50%, #061412 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 96px;
+            padding-bottom: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(to top, var(--dark), transparent);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: clamp(2rem, 4.5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.2;
+            color: #fff;
+        }
+        .hero .lead {
+            color: #b8d4ce;
+            max-width: 540px;
+        }
+        .hero-visual {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-visual img {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 16px;
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.45),
+                0 0 40px rgba(0, 255, 157, 0.12);
+        }
+        .hero-visual::before {
+            content: '';
+            position: absolute;
+            inset: 8% 12%;
+            background: radial-gradient(ellipse, rgba(0, 255, 157, 0.18), transparent 70%);
+            filter: blur(30px);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .app-visual {
+            position: relative;
+            text-align: center;
+        }
+        .app-visual img {
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
+        }
+        .app-visual::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            height: 70%;
+            background: radial-gradient(ellipse, rgba(0, 255, 157, 0.16), transparent 68%);
+            filter: blur(28px);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .app-checklist {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem;
+        }
+        .app-checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 0.85rem;
+            color: #c8ddd8;
+            font-size: 0.98rem;
+        }
+        .app-checklist i {
+            color: var(--green);
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+        .register-visual {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+        }
+        .register-visual img {
+            width: 100%;
+            height: auto;
+            display: block;
+            vertical-align: middle;
+        }
+        .highlight { color: var(--green); }
+        .badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 255, 157, 0.1);
+            border: 1px solid var(--border);
+            color: var(--green);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 50px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 12px 20px;
+        }
+        .stat-item i {
+            color: var(--green);
+            margin-bottom: 8px;
+        }
+        .stat-item p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #c8ddd8;
+        }
+
+        .trust-bar {
+            background: rgba(17, 44, 40, 0.9);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 18px 0;
+        }
+        .trust-bar span {
+            color: var(--muted);
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .trust-bar i { color: var(--accent); margin-right: 6px; }
+
+        .section-title {
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.75rem;
+        }
+        .section-sub {
+            color: var(--muted);
+            max-width: 640px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .card-dark {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            height: 100%;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        .card-dark:hover {
+            border-color: rgba(0, 255, 157, 0.45);
+            transform: translateY(-3px);
+        }
+        .card-dark.featured {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 1px rgba(0, 204, 122, 0.15), 0 12px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        .card-dark .card-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #00ff9d, #00cc7a);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 50px;
+            white-space: nowrap;
+        }
+        .card-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: rgba(0, 255, 157, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--green);
+            font-size: 1.4rem;
+            margin: 0 auto 1rem;
+        }
+        .card-dark h3 {
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .card-dark .amount {
+            color: var(--green);
+            font-size: 1.75rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .card-dark .meta {
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        .card-dark ul {
+            text-align: left;
+            padding-left: 1.1rem;
+            margin: 1rem 0;
+            color: #c8ddd8;
+            font-size: 0.9rem;
+        }
+        .card-dark ul li { margin-bottom: 0.35rem; }
+
+        .feature-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.5rem;
+            height: 100%;
+        }
+        .feature-box h4 {
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .feature-box p {
+            color: var(--muted);
+            font-size: 0.92rem;
+            margin: 0;
+        }
+
+        .step-num {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00ff9d, #00cc7a);
+            color: #000;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .table-wrap {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .table-dark-custom {
+            --bs-table-color: #e8f0ee;
+            --bs-table-bg: transparent;
+            --bs-table-border-color: var(--border);
+            --bs-table-striped-bg: rgba(17, 44, 40, 0.75);
+            --bs-table-striped-color: #e8f0ee;
+            --bs-table-active-bg: rgba(0, 204, 122, 0.12);
+            --bs-table-active-color: #ffffff;
+            --bs-table-hover-bg: rgba(0, 204, 122, 0.1);
+            --bs-table-hover-color: #ffffff;
+            color: #e8f0ee !important;
+            margin-bottom: 0;
+        }
+        .table-dark-custom > :not(caption) > * > * {
+            color: #e8f0ee !important;
+            background-color: var(--bs-table-bg);
+            border-bottom-color: var(--border);
+            box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-bg)));
+        }
+        .table-dark-custom thead th {
+            background: rgba(0, 204, 122, 0.14) !important;
+            color: var(--green) !important;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border);
+            white-space: nowrap;
+            font-size: 0.88rem;
+        }
+        .table-dark-custom tbody th {
+            color: var(--green) !important;
+            font-weight: 600;
+            background: transparent !important;
+        }
+        .table-dark-custom td {
+            color: #e8f0ee !important;
+            font-size: 0.9rem;
+            vertical-align: middle;
+            background: transparent !important;
+        }
+        .table-dark-custom.table-striped > tbody > tr:nth-of-type(odd) > * {
+            --bs-table-color-type: #e8f0ee;
+            --bs-table-bg-type: rgba(17, 44, 40, 0.75);
+            color: #e8f0ee !important;
+        }
+        .table-dark-custom a {
+            color: var(--green);
+        }
+        .table-dark-custom strong {
+            color: #ffffff;
+        }
+        .table-dark-custom code {
+            color: var(--green);
+        }
+
+        .accordion-dark .accordion-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            margin-bottom: 10px;
+            border-radius: 10px !important;
+            overflow: hidden;
+        }
+        .accordion-dark .accordion-button {
+            background: var(--card);
+            color: #fff;
+            font-weight: 600;
+            box-shadow: none;
+        }
+        .accordion-dark .accordion-button:not(.collapsed) {
+            background: rgba(0, 204, 122, 0.1);
+            color: var(--green);
+        }
+        .accordion-dark .accordion-button::after {
+            filter: invert(1) brightness(1.5);
+        }
+        .accordion-dark .accordion-body {
+            color: #c8ddd8;
+            background: rgba(6, 20, 18, 0.4);
+        }
+
+        .cta-banner {
+            background:
+                linear-gradient(135deg, rgba(0, 204, 122, 0.15), rgba(10, 31, 28, 0.95)),
+                var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .game-tag {
+            display: inline-block;
+            background: rgba(0, 255, 157, 0.08);
+            border: 1px solid var(--border);
+            color: #c8ddd8;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin: 4px;
+        }
+
+        footer {
+            background: var(--darker);
+            border-top: 1px solid var(--border);
+        }
+        footer a { color: #a0c0b8; }
+        footer a:hover { color: var(--green); }
+        .footer-brand { color: var(--green); font-weight: 800; font-size: 1.5rem; }
+
+        .warning-note {
+            background: rgba(255, 193, 7, 0.08);
+            border-left: 3px solid #ffc107;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: #e8d9a0;
+        }
+
+        @media (max-width: 991.98px) {
+            .hero { min-height: auto; text-align: center; }
+            .hero .lead { margin-left: auto; margin-right: auto; }
+            .hero-copy .d-flex { justify-content: center; }
+            .hero-stats { justify-content: center; }
+        }
+        @media (max-width: 576px) {
+            .hero { padding-top: 100px; }
+            .btn-cta, .btn-outline-green { width: 100%; }
+            .hero-visual img { border-radius: 12px; }
+        }
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Jita365</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">Jita365</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="promotion.html">Promotions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="vip.html">VIP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guide.html">How to Start</a></li>
-                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="promotion.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="vip.html">VIP</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="guide.html">Guide</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="about.html">About</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-sm px-4">Join Now</a>
+                    </li>
                 </ul>
-                <a href="https://www.jita365.net/signup?pid=jita365aff" target="_blank" class="btn btn-warning ms-3">Join Now</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Jita365 - Bangladesh's Favorite Casino</h1>
-            <p class="lead mb-4">Fast bKash & Nagad Deposit • 300% Welcome Bonus • 15 Min Withdrawal • 24/7 Support</p>
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                <a href="https://www.jita365.net/signup?pid=jita365aff" target="_blank" class="btn cta-btn btn-lg">Register & Get Bonus</a>
-                <a href="promotion.html" class="btn btn-outline-light btn-lg">See All Promotions</a>
-            </div>
-            <div class="mt-4">
-                <span class="badge bg-success me-2">Minimum Deposit ৳100</span>
-                <span class="badge bg-success">Curacao Licensed</span>
+    <!-- Hero: Layer 1 — Core intent (Login / Register CTA) -->
+    <section class="hero">
+        <div class="container position-relative" style="z-index: 1;">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-5 hero-copy">
+                    <div class="mb-3">
+                        <span class="badge-pill"><i class="fas fa-certificate"></i> Curacao 8048/JAZ · Est. 2024</span>
+                    </div>
+                    <h1 class="mb-3">
+                        Amplify Every Deposit on<br>
+                        <span class="highlight">Jita365 Bangladesh</span>
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        Low entry from <strong class="text-white">৳100</strong> · <strong class="text-white">15-min</strong> withdrawals ·
+                        <strong class="text-white">50 free spins</strong> · up to <strong class="text-white">300%</strong> welcome bonus ·
+                        <strong class="text-white">7%</strong> on every deposit via bKash &amp; Nagad
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap mb-4">
+                        <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg">
+                            Register &amp; Claim Bonus
+                        </a>
+                        <a href="promotion.html" class="btn btn-outline-green btn-lg">View All Promotions</a>
+                    </div>
+
+                    <div class="d-flex gap-2 gap-md-3 flex-wrap hero-stats">
+                        <div class="stat-item px-2">
+                            <i class="fas fa-bolt fa-lg"></i>
+                            <p><strong class="text-white d-block">~15 Min</strong>Withdrawal</p>
+                        </div>
+                        <div class="stat-item px-2">
+                            <i class="fas fa-mobile-alt fa-lg"></i>
+                            <p><strong class="text-white d-block">bKash &amp; Nagad</strong>Fast Deposit</p>
+                        </div>
+                        <div class="stat-item px-2">
+                            <i class="fas fa-coins fa-lg"></i>
+                            <p><strong class="text-white d-block">Min ৳100</strong>Low Barrier</p>
+                        </div>
+                        <div class="stat-item px-2">
+                            <i class="fas fa-headset fa-lg"></i>
+                            <p><strong class="text-white d-block">24/7 Support</strong>Live Chat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-visual">
+                        <img
+                            src="images/hero.webp"
+                            alt="Jita365 — Play More, Win More. Exciting games, big bonuses, fast payouts, 24/7 support."
+                            width="1280"
+                            height="720"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="py-3 bg-light text-center">
+    <!-- Trust bar -->
+    <div class="trust-bar">
         <div class="container">
-            <div class="row text-center">
-                <div class="col-6 col-md-3 mb-3"><i class="fas fa-bolt text-success"></i> <strong>15 Min Withdrawal</strong></div>
-                <div class="col-6 col-md-3 mb-3"><i class="fas fa-mobile-alt text-primary"></i> <strong>bKash & Nagad</strong></div>
-                <div class="col-6 col-md-3 mb-3"><i class="fas fa-headset text-info"></i> <strong>24/7 Support</strong></div>
-                <div class="col-6 col-md-3 mb-3"><i class="fas fa-trophy text-warning"></i> <strong>Big Bonuses</strong></div>
+            <div class="d-flex justify-content-center align-items-center gap-4 gap-md-5 flex-wrap text-center">
+                <span><i class="fas fa-shield-alt"></i> Licensed: Curacao 8048/JAZ</span>
+                <span><i class="fas fa-wallet"></i> Min Deposit ৳100</span>
+                <span><i class="fas fa-clock"></i> ~15 Min Payout</span>
+                <span><i class="fas fa-layer-group"></i> JILI · PG Soft · JDB · PP</span>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Welcome Bonus -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Welcome Bonuses for New Players</h2>
+    <!-- Welcome Offers — accurate numbers from official data -->
+    <section class="py-5" id="bonuses">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">Welcome Offers — Grab What You Qualify For</h2>
+            <p class="section-sub text-center">
+                Concrete numbers, clear conditions. New-player free spins stack with long-term deposit rewards, check-in, and referral bonuses — each wagering requirement is tracked separately.
+            </p>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <div class="card-body">
-                            <h3>50 Free Spins</h3>
-                            <p class="text-success">After first deposit</p>
-                            <a href="https://www.jita365.net/signup?pid=jita365aff" target="_blank" class="btn btn-primary">Claim Now</a>
-                        </div>
+                <!-- 50 Free Spins -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fas fa-sync-alt"></i></div>
+                        <p class="amount mb-1">50</p>
+                        <h3 class="mb-2">Free Spins</h3>
+                        <p class="meta mb-0">New players · any first deposit</p>
+                        <ul>
+                            <li>Claim within <strong>24 hours</strong> of first deposit</li>
+                            <li>Code: <code class="text-success">jita365bonuscard</code></li>
+                            <li>36× wagering · valid 3 days</li>
+                        </ul>
+                        <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta w-100 mt-auto">Claim Now</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center border-warning">
-                        <div class="card-body">
-                            <h3>200% Welcome Bonus</h3>
-                            <p>Deposit ৳500 Get ৳1,000</p>
-                            <a href="promotion.html" class="btn btn-warning">Learn More</a>
-                        </div>
+                <!-- 200% Welcome -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-dark featured p-4 text-center pt-5">
+                        <span class="card-badge">VIP2+</span>
+                        <div class="card-icon"><i class="fas fa-gift"></i></div>
+                        <p class="amount mb-1">200%</p>
+                        <h3 class="mb-2">Welcome Bonus</h3>
+                        <p class="meta mb-0">Deposit ৳500 → get ৳1,000</p>
+                        <ul>
+                            <li>Requires <strong>VIP2+</strong></li>
+                            <li>25× wagering</li>
+                            <li>Max withdraw ৳2,000</li>
+                        </ul>
+                        <a href="promotion.html" class="btn btn-outline-green w-100">See Details</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center">
-                        <div class="card-body">
-                            <h3>7% Daily Deposit Bonus</h3>
-                            <p>Unlimited • 1x Wagering</p>
-                            <a href="promotion.html" class="btn btn-primary">See Details</a>
-                        </div>
+                <!-- 300% Welcome -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fas fa-crown"></i></div>
+                        <p class="amount mb-1">300%</p>
+                        <h3 class="mb-2">Welcome Bonus</h3>
+                        <p class="meta mb-0">Deposit ৳500 → get ৳1,500</p>
+                        <ul>
+                            <li>Requires <strong>VIP5+</strong></li>
+                            <li>Must have used the <strong>200%</strong> offer first</li>
+                            <li>25× wagering · max withdraw ৳3,000</li>
+                        </ul>
+                        <a href="promotion.html" class="btn btn-outline-green w-100">See Details</a>
                     </div>
                 </div>
+                <!-- 7% Daily -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fas fa-percent"></i></div>
+                        <p class="amount mb-1">7%</p>
+                        <h3 class="mb-2">Every Deposit</h3>
+                        <p class="meta mb-0">Unlimited · no min deposit</p>
+                        <ul>
+                            <li>Only <strong>1× wagering</strong> to withdraw</li>
+                            <li>Not for Live Casino / FanStalls</li>
+                            <li>Stacks with welcome offers</li>
+                        </ul>
+                        <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta w-100">Join &amp; Earn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="warning-note mt-4">
+                <strong>Order matters:</strong> The 200% (VIP2+) and 300% (VIP5+) welcome packages cannot be mixed freely. You must complete the 200% offer before you can take the 300%. Free spins, the 7% deposit bonus, check-in, and referral rewards can stack on top — but each has its own wagering target.
             </div>
         </div>
     </section>
 
     <!-- Why Jita365 -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Why Bangladeshi Players Love Jita365</h2>
+    <section class="py-5" style="background: rgba(6, 20, 18, 0.5);">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">Why Bangladesh Players Choose Jita365</h2>
+            <p class="section-sub text-center">
+                Brand 3 in the Jita Alliance — built for low barrier and high reward, not cricket odds. Bonus, VIP ladder, and cashback-style returns first.
+            </p>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3"><div class="card h-100"><div class="card-body"><h5>Fast Local Payments</h5><p>bKash & Nagad instant deposit</p></div></div></div>
-                <div class="col-md-6 col-lg-3"><div class="card h-100"><div class="card-body"><h5>Quick Withdrawal</h5><p>Average 15 minutes processing</p></div></div></div>
-                <div class="col-md-6 col-lg-3"><div class="card h-100"><div class="card-body"><h5>Great Bonuses</h5><p>High rewards for new & existing players</p></div></div></div>
-                <div class="col-md-6 col-lg-3"><div class="card h-100"><div class="card-body"><h5>24/7 Support</h5><p>Always here to help via live chat & Telegram</p></div></div></div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-door-open"></i></div>
+                        <h4>৳100 Minimum Deposit</h4>
+                        <p>Start small, test the platform, then scale. Perfect if you want to try bonuses without locking a big bankroll on day one.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-tachometer-alt"></i></div>
+                        <h4>~15 Minute Withdrawals</h4>
+                        <p>Cash-out anxiety is real in BD. Jita365 targets about 15 minutes for withdrawals so you are not waiting overnight for your money.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-mobile-alt"></i></div>
+                        <h4>bKash &amp; Nagad Ready</h4>
+                        <p>Deposit the way you already pay — mobile money first. Pair with the App for a smoother mobile experience and selected bonus eligibility.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-chart-line"></i></div>
+                        <h4>VIP Ladder That Pays More</h4>
+                        <p>Climb tiers to unlock stronger welcome packages (200% at VIP2+, 300% at VIP5+) and referral rewards from VIP3+. Settlement: check 03:00, credit 12:00.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-gamepad"></i></div>
+                        <h4>Slots, Fish, Crash &amp; More</h4>
+                        <p>Slots, Fish Games, Bingo, Crash, Table Games, Arcade — from JILI, PG Soft, JDB, FC, YB, Pragmatic Play, and Joker.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-box">
+                        <div class="card-icon mb-3" style="margin: 0 0 1rem;"><i class="fas fa-user-shield"></i></div>
+                        <h4>Licensed &amp; Clear Rules</h4>
+                        <p>Curacao 8048/JAZ. One account per player, no multi-accounting or hedging. Prefer the official signup link — fake sites often invent bonus % you will never get.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-light py-5">
-        <div class="container">
-            <p class="text-center mb-0">&copy; 2026 Jita365 Bangladesh. For entertainment purposes only. 18+ | Play Responsibly</p>
-            <p class="text-center small mt-3">
-                <a href="about.html" class="text-light">About Us</a> | 
-                <a href="faq.html" class="text-light">FAQ</a>
+    <!-- How to start — Layer 2 derived ops -->
+    <section class="py-5" id="guide">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">How to Register — 6 Easy Steps</h2>
+            <p class="section-sub text-center">
+                Same entrance for VIP and regular members. Follow the official flow below, then deposit from ৳100 and claim your bonuses.
             </p>
+
+            <div class="register-visual mb-4" id="register">
+                <img
+                    src="images/register-steps.webp"
+                    alt="Jita365 registration: 1 Click Register, 2 Fill details, 3 Referral code optional, 4 Verification code, 5 Agree to Terms, 6 Click Register — Registration Successful."
+                    width="1600"
+                    height="900"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </div>
+
+            <div class="row g-3 g-md-4 mb-2 text-center text-md-start">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">1</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Click Register</strong>On the official homepage</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">2</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Fill details</strong>Username, password, mobile</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">3</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Referral code</strong>Optional if you have one</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">4</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Verify mobile</strong>Enter the SMS code</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">5</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Agree terms</strong>Tick Terms &amp; Conditions</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card-dark p-3 h-100">
+                        <div class="step-num mx-auto mx-md-0 mb-2" style="width:32px;height:32px;font-size:0.85rem;">6</div>
+                        <p class="meta mb-0 small"><strong class="text-white d-block">Submit</strong>Registration successful</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-center text-white fs-5 fw-bold mt-5 mb-3">After signup — deposit, claim, play</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card-dark p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="step-num">A</div>
+                            <h3 class="mb-0 fs-5">Deposit ৳100+</h3>
+                        </div>
+                        <p class="meta mb-0">Use bKash or Nagad. Any amount for free spins; ৳500 unlocks VIP welcome packages when eligible.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-dark p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="step-num">B</div>
+                            <h3 class="mb-0 fs-5">Claim Bonuses</h3>
+                        </div>
+                        <p class="meta mb-0">Within 24h of first deposit, enter <code class="text-success">jita365bonuscard</code> for 50 free spins. Stack 7% on every top-up.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-dark p-4 h-100">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="step-num">C</div>
+                            <h3 class="mb-0 fs-5">Play &amp; Withdraw</h3>
+                        </div>
+                        <p class="meta mb-0">Clear the stated wagering, then cash out — typical payout window around 15 minutes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg">Start Registration</a>
+                <a href="guide.html" class="btn btn-outline-green btn-lg ms-md-2 mt-2 mt-md-0">Full Deposit Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- App / Mobile experience -->
+    <section class="py-5" id="app" style="background: rgba(6, 20, 18, 0.5);">
+        <div class="container py-md-3">
+            <div class="row align-items-center g-4 g-lg-5">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <div class="app-visual">
+                        <img
+                            src="images/app-mockup.webp"
+                            alt="Jita365 mobile app — Register, Log In, Deposit, Withdrawal, Slots, Fish, Bingo and more on your phone."
+                            width="800"
+                            height="1000"
+                            loading="lazy"
+                            decoding="async"
+                        >
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1">
+                    <span class="badge-pill mb-3"><i class="fas fa-mobile-alt"></i> Mobile-first for Bangladesh</span>
+                    <h2 class="section-title mt-3">Play Jita365 on Your Phone</h2>
+                    <p class="mb-4" style="color: var(--muted); max-width: 480px;">
+                        Most BD players deposit on Android with bKash or Nagad. The app-style lobby puts
+                        <strong class="text-white">Register</strong>, <strong class="text-white">Log In</strong>,
+                        <strong class="text-white">Deposit</strong> and <strong class="text-white">Withdrawal</strong>
+                        one tap away — VIP and regular members share the same entrance.
+                    </p>
+                    <ul class="app-checklist">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong class="text-white">One login</strong> for VIP and standard accounts — no separate VIP URL.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong class="text-white">Game lobby</strong> for Slot, Fish, Bingo, Lottery and more — JILI, JDB and other studios on the home grid.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong class="text-white">Fast cash-out path</strong> — deposit min ৳100, aim for ~15 min withdrawals after terms are met.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong class="text-white">Promotions &amp; Member centre</strong> in the bottom nav — claim free spins, 7% deposit bonus and inbox rewards on the go.</span>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg">Open &amp; Register</a>
+                        <a href="#bonuses" class="btn btn-outline-green btn-lg">See Bonuses First</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform facts table -->
+    <section class="py-5" style="background: rgba(6, 20, 18, 0.5);">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">Platform Snapshot</h2>
+            <p class="section-sub text-center">Verified details — no inflated % from clone sites.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="table-wrap">
+                        <div class="table-responsive">
+                            <table class="table table-dark-custom table-striped align-middle">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="width: 40%; color: var(--green);">License</th>
+                                        <td class="pe-4">Curacao 8048/JAZ</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Established</th>
+                                        <td class="pe-4">2024</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Minimum Deposit</th>
+                                        <td class="pe-4">৳100</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Withdrawal Time</th>
+                                        <td class="pe-4">About 15 minutes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Payment Focus</th>
+                                        <td class="pe-4">bKash &amp; Nagad (mobile money)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Game Categories</th>
+                                        <td class="pe-4">Slots, Fish Games, Bingo, Crash, Table Games, Arcade</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Key Providers</th>
+                                        <td class="pe-4">JILI, PG Soft, JDB, FC, YB, Pragmatic Play (PP), Joker (JK)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Support</th>
+                                        <td class="pe-4">24/7 live chat + official Telegram channels</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">VIP Settlement</th>
+                                        <td class="pe-4">Check 03:00 · Credit 12:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="ps-4" style="color: var(--green);">Login</th>
+                                        <td class="pe-4">One shared entrance for VIP and regular members</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <span class="game-tag">Slots</span>
+                <span class="game-tag">Fish Games</span>
+                <span class="game-tag">Bingo</span>
+                <span class="game-tag">Crash</span>
+                <span class="game-tag">Table Games</span>
+                <span class="game-tag">Arcade</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra rewards strip -->
+    <section class="py-5">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">Keep Earning After Welcome Week</h2>
+            <p class="section-sub text-center">Daily, weekly, and invite rewards confirmed stackable with welcome packages (separate wagering each).</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>7-Day Check-In</h3>
+                        <p class="meta">Deposit ৳500/day for a spin chance — cash ৳15–20 or free spin cards.</p>
+                        <a href="promotion.html" class="btn btn-outline-green w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fab fa-facebook"></i></div>
+                        <h3>Weekly FB Share</h3>
+                        <p class="meta">Share the designated post with the code — claim ৳100 weekly (5× wagering).</p>
+                        <a href="promotion.html" class="btn btn-outline-green w-100 mt-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-dark p-4 text-center">
+                        <div class="card-icon"><i class="fas fa-user-plus"></i></div>
+                        <h3>Referral ৳800 + ৳200</h3>
+                        <p class="meta">VIP3+ invites friends: you get ৳800, they get ৳200 after their ৳500 deposit + 20,000 turnover in 30 days. No invite cap. Paid next day 12:00 to Bonus Inbox.</p>
+                        <a href="vip.html" class="btn btn-outline-green w-100 mt-3">VIP &amp; Referral</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ — Layer 3 trust -->
+    <section class="py-5" id="faq" style="background: rgba(6, 20, 18, 0.5);">
+        <div class="container py-md-3">
+            <h2 class="section-title text-center">FAQ — Straight Answers</h2>
+            <p class="section-sub text-center">Payment anxiety, bonus rules, fake sites — answered with platform facts only.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion accordion-dark" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Is Jita365 login different for VIP members?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No. VIP and regular members use the <strong>same login entrance</strong>. There is no separate “VIP login” URL — if you see sites pushing a special VIP login, treat that as a red flag.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What is the minimum deposit and how fast can I withdraw?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Minimum deposit is <strong>৳100</strong>. Withdrawals typically complete in about <strong>15 minutes</strong> after approval. Always finish any active wagering requirement before requesting a cash-out on bonus funds.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I take 200% and 300% welcome bonuses together?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Not as a free mix. <strong>200%</strong> is for VIP2+ (deposit ৳500 → ৳1,000 bonus, 25×, max withdraw ৳2,000). <strong>300%</strong> is for VIP5+ (deposit ৳500 → ৳1,500, 25×, max ৳3,000) and you <strong>must have already joined the 200% offer</strong>. Free spins, 7% deposit bonus, check-in, and referral can stack with welcome offers, but each wagering rule stands alone.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How do I get the 50 free spins?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Register, make any first deposit, then within <strong>24 hours</strong> enter code <code>jita365bonuscard</code>. Spins have <strong>36×</strong> wagering and expire in <strong>3 days</strong>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Is the 7% deposit bonus really unlimited?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes — every deposit can get <strong>7%</strong> with <strong>no minimum deposit amount</strong> and only <strong>1× wagering</strong>. It does <strong>not</strong> apply to Live Casino or FanStalls and similar excluded games.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    How does the referral program work?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You need <strong>VIP3+</strong> to invite. You earn <strong>৳800</strong>, the friend earns <strong>৳200</strong> after they deposit ৳500 total within 30 days of signup and reach <strong>20,000</strong> turnover on eligible games (all slots, Mega Ball, Money Wheel). No withdraw cap on this reward, unlimited invites. System pays the next day at <strong>12:00</strong> to Bonus Inbox (Member Centre → Notification → Bonus).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    How do I avoid fake Jita365 websites?
+                                </button>
+                            </h3>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Only use the official registration link on this page. Clone sites often advertise fake numbers (e.g. “500% first deposit”) that do not match verified offers (max structured welcome is the <strong>300%</strong> VIP5+ path after 200%). If a bonus % sounds too high or the domain looks off, do not deposit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                                    What rules can cancel my bonus?
+                                </button>
+                            </h3>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Multiple accounts, fraud, and hedging are prohibited. Most promos allow <strong>one participation per IP</strong>. Jita365 may modify, pause, or end promotions at any time — always check terms in the promo centre before depositing for a specific offer.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5">
+        <div class="container py-md-3">
+            <div class="cta-banner">
+                <h2 class="section-title mb-3">Ready to Multiply Your First Deposit?</h2>
+                <p class="mb-4 mx-auto" style="max-width: 560px; color: var(--muted);">
+                    ৳100 min · 50 free spins with code <strong class="text-white">jita365bonuscard</strong> · 7% on every top-up · ~15 min cash-outs.
+                    Register on the official link — don’t leave free value on the table.
+                </p>
+                <a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer" class="btn btn-cta btn-lg">
+                    Join Jita365 Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="footer-brand mb-2">Jita365</div>
+                    <p class="small" style="color: var(--muted); max-width: 360px;">
+                        Jita Alliance Brand 3 — low barrier, high reward for Bangladesh players.
+                        Licensed Curacao 8048/JAZ. Est. 2024.
+                    </p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4 class="fs-6 text-white mb-3">Pages</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="promotion.html">Promotions</a></li>
+                        <li class="mb-2"><a href="vip.html">VIP</a></li>
+                        <li class="mb-2"><a href="guide.html">Guide</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h4 class="fs-6 text-white mb-3">Quick Links</h4>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="https://www.jita365.work/?pid=jita365aff" target="_blank" rel="noopener noreferrer sponsored">Official Site</a></li>
+                        <li class="mb-2"><a href="https://www.jita365.work/signup?pid=jita365aff" target="_blank" rel="noopener noreferrer sponsored">Official Sign Up</a></li>
+                        <li class="mb-2"><a href="#bonuses">Welcome Bonuses</a></li>
+                        <li class="mb-2"><a href="#guide">How to Start</a></li>
+                        <li class="mb-2"><a href="#register">Register Steps</a></li>
+                        <li class="mb-2"><a href="#app">Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: var(--border);">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <p class="small mb-0" style="color: var(--muted);">© 2026 Jita365 Bangladesh · 18+ | Play Responsibly</p>
+                <p class="small mb-0" style="color: var(--muted);">Affiliate landing page · Not the operator. Terms apply on the official site.</p>
+            </div>
         </div>
     </footer>
 
