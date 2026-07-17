@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://m0limeioo-work.github.io/jita365-bangladesh/sitemap.xml
+Sitemap: https://jita-365.net/sitemap.xml
